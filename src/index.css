@@ -74,3 +74,9 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .effectNav {
+    @apply absolute top-4 left-0 border border-b-0 opacity-0 border-b-gray-500 w-0 group-hover:opacity-100 group-hover:w-full duration-500 mt-2;
+  }
+}
