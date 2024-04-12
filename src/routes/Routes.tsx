@@ -23,7 +23,7 @@ export const router = createBrowserRouter([
         element: <Blog />,
       },
       {
-        path: "about",
+        path: "/about",
         element: <About />,
       },
     ],

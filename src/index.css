@@ -73,6 +73,9 @@
   body {
     @apply bg-background text-foreground;
   }
+  html {
+    font-family: "Poppins", sans-serif;
+  }
 }
 
 @layer components {

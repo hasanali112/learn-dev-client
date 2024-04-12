@@ -8,7 +8,14 @@ type TChildren = {
 
 const Container = ({ children, className }: TChildren) => {
   return (
-    <div className={cn(`w-full max-w-7xl mx-auto`, className)}>{children}</div>
+    <div
+      className={cn(
+        `w-full md:max-w-[1024px] lg:max-w-[1280px] mx-auto`,
+        className
+      )}
+    >
+      {children}
+    </div>
   );
 };
 

@@ -64,9 +64,9 @@ const Navbar = () => {
             variants={introNav}
             initial="hidden"
             animate="visible"
-            className="flex gap-16"
+            className="flex justify-center items-center gap-16"
           >
-            <motion.span variants={childrenNav} className="text-xl font-bold">
+            <motion.span variants={childrenNav} className="text-3xl font-bold">
               Learn <span className="text-cyan-400">Dev</span>
             </motion.span>
             <div className="lg:block hidden">
@@ -154,7 +154,7 @@ const Navbar = () => {
               </span>
             )}
             <div
-              className={`absolute   ${
+              className={`absolute z-10  ${
                 isOpen
                   ? "md:-right-4 top-10 md:top-[39px] -right-4"
                   : "-right-4 md:right-16 md:top-[39px] -top-96"
