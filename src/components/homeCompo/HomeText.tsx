@@ -2,7 +2,7 @@ const HomeText = () => {
   return (
     <div>
       <div>
-        <h1 className="text-center text-3xl lg:text-5xl md:text-4xl font-bold text-white mt-10 md:mt-[100px] ">
+        <h1 className="text-center text-3xl lg:text-5xl md:text-4xl font-bold text-white pt-10 md:pt-14 lg:pt-20">
           Welcome to Dev Hub
         </h1>
         <p className=" lg:text-2xl text-base md:text-xl lg:tracking-wider md:tracking-wide  text-center md:font-semibold text-white min-w-[30ch] lg:max-w-[60ch] md:max-w-[66ch] w-3/4 mx-auto mt-5">

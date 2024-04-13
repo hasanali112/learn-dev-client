@@ -41,37 +41,43 @@ const Carousel = () => {
     return () => clearInterval(interval);
   }, [slideIndex, imageSlide.length]);
   return (
-    <div className="lg:w-3/4 md:w-4/5 mx-auto mt-10 relative group  p-3 md:p-0 lg:p-0">
+    <div className="lg:w-3/4 md:w-4/5 mx-auto mt-5 lg:mt-10  group  relative p-3 md:p-0 lg:p-0">
       <div
         id="image-clip"
         style={{
           backgroundImage: `url(${imageSlide[slideIndex].url})`,
         }}
-        className="w-[100%] h-[250px] lg:w-[950px] md:w-[630px] lg:h-[450px]  bg-center bg-cover duration-700"
+        className="w-[100%] h-[200px]  lg:w-[950px] md:w-[630px] lg:h-[450px]  bg-center bg-cover duration-700"
       ></div>
-      <div className="transition-transform translate-x-3 absolute top-[60%] left-0 hidden group-hover:block">
-        <ChevronLeftIcon
-          onClick={handlePrevSlide}
-          className="w-8 h-8 bg-white rounded-full"
-        />
+      <div className="">
+        <div className="flex justify-between items-center mx-2 -translate-y-20 lg:-translate-y-48">
+          <div>
+            <ChevronLeftIcon
+              onClick={handlePrevSlide}
+              className="w-8 h-8 bg-white rounded-full"
+            />
+          </div>
+          <div>
+            <ChevronRightIcon
+              onClick={handleNextSlide}
+              className="w-8 h-8 bg-white rounded-full"
+            />
+          </div>
+        </div>
       </div>
-      <div className="transition-transform translate-x-[900px]  absolute top-[60%] hidden group-hover:block">
-        <ChevronRightIcon
-          onClick={handleNextSlide}
-          className="w-8 h-8 bg-white rounded-full"
-        />
-      </div>
-      <div className="absolute bottom-4 right-0 left-0">
-        <div className="flex items-center justify-center gap-2">
-          {imageSlide.map((_, i) => (
-            <div
-              key={i}
-              className={`transition-all w-2 h-2 bg-white rounded-full cursor-pointer
+      <div>
+        <div className="absolute top-[70%] lg:top-[85%] right-[45%]">
+          <div className="flex items-center justify-center gap-2">
+            {imageSlide.map((_, i) => (
+              <div
+                key={i}
+                className={`transition-all w-2 h-2 bg-white rounded-full cursor-pointer
                     ${slideIndex === i ? "p-2" : "bg-opacity-50"}
                  `}
-              onClick={() => handleIndicatorClick(i)}
-            />
-          ))}
+                onClick={() => handleIndicatorClick(i)}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>
