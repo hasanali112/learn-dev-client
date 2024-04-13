@@ -4,6 +4,7 @@ import Carousel from "@/components/homeCompo/Carousel";
 import HomeText from "@/components/homeCompo/HomeText";
 import Learn from "@/components/homeCompo/learnSection/Learn";
 import Need from "@/components/homeCompo/needSection/Need";
+import Tutorial from "@/components/homeCompo/tutorial/Tutorial";
 
 const Home = () => {
   return (
@@ -26,8 +27,13 @@ const Home = () => {
         <Learn />
       </Container>
       <div className="bg-white">
-        <Container className="h-[1120px] lg:h-[600px] md:h-[680px] lg:mt-10 pt-10 ">
+        <Container className="h-[1230px] lg:h-[600px] md:h-[1200px] lg:mt-10 pt-10 ">
           <Need />
+        </Container>
+      </div>
+      <div className="bg-white">
+        <Container className="h-[1220px] lg:h-[600px] md:h-[680px]">
+          <Tutorial />
         </Container>
       </div>
     </div>
