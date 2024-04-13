@@ -26,7 +26,7 @@ const Learn = () => {
           <h1 className="lg:text-left text-center text-4xl font-bold">
             Learn and Increases your Skilled{" "}
           </h1>
-          <p className="text-rose-600 text-xl text-center font-bold mt-3">
+          <p className="text-rose-600 text-xl text-center lg:text-left font-bold mt-3">
             Explore all Skill
           </p>
         </div>

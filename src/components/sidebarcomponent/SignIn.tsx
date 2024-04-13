@@ -1,5 +1,3 @@
-import React from "react";
-
 const SignIn = () => {
   return (
     <div className="bg-gray-300 rounded-lg">

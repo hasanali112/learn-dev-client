@@ -3,6 +3,7 @@ import "./../style/Home.css";
 import Carousel from "@/components/homeCompo/Carousel";
 import HomeText from "@/components/homeCompo/HomeText";
 import Learn from "@/components/homeCompo/learnSection/Learn";
+import Need from "@/components/homeCompo/needSection/Need";
 
 const Home = () => {
   return (
@@ -21,9 +22,14 @@ const Home = () => {
           </div>
         </div>
       </Container>
-      <Container className="h-[1000px] lg:h-[600px] lg:mt-36 ">
+      <Container className="h-[900px] lg:h-[600px] md:h-[680px] lg:mt-36 ">
         <Learn />
       </Container>
+      <div className="bg-white">
+        <Container className="h-[1120px] lg:h-[600px] md:h-[680px] lg:mt-10 pt-10 ">
+          <Need />
+        </Container>
+      </div>
     </div>
   );
 };
