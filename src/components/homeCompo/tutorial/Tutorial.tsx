@@ -1,19 +1,21 @@
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/16/solid";
 import TutorialCard from "./TutorialCard";
+import { useRef } from "react";
 
 const Tutorial = () => {
-  const boxConatian = document.querySelector("#container-card");
+  const boxConatianRef = useRef<HTMLDivElement>(null);
 
-  const handlepReviousCard = () => {
-    if (boxConatian) {
-      const width = boxConatian.clientWidth;
-      boxConatian.scrollLeft = boxConatian.scrollLeft - width;
+  const handlePreviousCard = () => {
+    if (boxConatianRef.current) {
+      const width = boxConatianRef.current.clientWidth;
+      boxConatianRef.current.scrollLeft -= width;
     }
   };
-  const handlepNextCard = () => {
-    if (boxConatian) {
-      const width = boxConatian.clientWidth;
-      boxConatian.scrollLeft = boxConatian.scrollLeft + width;
+
+  const handleNextCard = () => {
+    if (boxConatianRef.current) {
+      const width = boxConatianRef.current.clientWidth;
+      boxConatianRef.current.scrollLeft += width;
     }
   };
 
@@ -27,7 +29,7 @@ const Tutorial = () => {
       </p>
       <div>
         <div
-          id="container-card"
+          ref={boxConatianRef}
           className="flex flex-row overflow-hidden gap-5 relative mt-4 scroll-smooth duration-300 lg:p-0 p-2"
         >
           <TutorialCard
@@ -66,13 +68,13 @@ const Tutorial = () => {
         <div className="flex justify-between items-center -translate-y-[500%]">
           <div>
             <ChevronLeftIcon
-              onClick={handlepReviousCard}
+              onClick={handlePreviousCard}
               className="w-8 h-8 bg-black text-white rounded-full cursor-pointer"
             />
           </div>
           <div>
             <ChevronRightIcon
-              onClick={handlepNextCard}
+              onClick={handleNextCard}
               className="w-8 h-8 bg-black text-white rounded-full cursor-pointer"
             />
           </div>
