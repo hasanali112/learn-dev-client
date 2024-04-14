@@ -5,6 +5,9 @@ import HomeText from "@/components/homeCompo/HomeText";
 import Learn from "@/components/homeCompo/learnSection/Learn";
 import Need from "@/components/homeCompo/needSection/Need";
 import Tutorial from "@/components/homeCompo/tutorial/Tutorial";
+import Faq from "@/components/homeCompo/faq/Faq";
+import bannerImage from "../assets/white-halftone.png";
+import Faqbanner from "@/components/homeCompo/faq/Faqbanner";
 
 const Home = () => {
   return (
@@ -32,9 +35,26 @@ const Home = () => {
         </Container>
       </div>
       <div className="bg-white">
-        <Container className="h-[1220px] lg:h-[600px] md:h-[680px]">
+        <Container className="h-[680px] lg:h-[600px] md:h-[680px]">
           <Tutorial />
         </Container>
+      </div>
+      <div className="bg-[#18152f] p-2">
+        <Container>
+          <Faqbanner />
+        </Container>
+        <div
+          style={{
+            background: `url(${bannerImage})`,
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "right bottom",
+            backgroundSize: "50%",
+          }}
+        >
+          <Container className="h-[680px] lg:h-[600px] md:h-[680px] text-white">
+            <Faq />
+          </Container>
+        </div>
       </div>
     </div>
   );
