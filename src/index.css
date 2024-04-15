@@ -82,4 +82,10 @@
   .effectNav {
     @apply absolute top-4 left-0 border border-b-0 opacity-0 border-b-gray-500 w-0 group-hover:opacity-100 group-hover:w-full duration-500 mt-2;
   }
+  .frontendcard {
+    @apply bg-gradient-to-r from-[#242147] via-[#242147] to-[#6F1D57];
+  }
+  .hovercard {
+    @apply bg-gradient-to-r from-[#1A4377] via-[#242147] to-[#242147];
+  }
 }

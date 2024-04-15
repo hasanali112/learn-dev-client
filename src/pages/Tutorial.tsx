@@ -1,7 +1,14 @@
+import Container from "@/components/Layout/shared/Container";
+import TutorialHome from "@/components/tutorialCompo/TutorialHome";
+
 const Tutorial = () => {
   return (
-    <div>
-      <h1>tutorial</h1>
+    <div className="bg-[#18152f]">
+      <Container>
+        <div>
+          <TutorialHome />
+        </div>
+      </Container>
     </div>
   );
 };

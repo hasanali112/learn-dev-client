@@ -9,6 +9,7 @@ import {
   introInput,
   introNav,
 } from "@/animation/navAnimation";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -75,14 +76,14 @@ const Navbar = () => {
                   variants={childrenNav}
                   className="transition ease-in-out delay-150 hover:scale-125 duration-200 relative group"
                 >
-                  Home
+                  <Link to="/"> Home</Link>
                   <span className="effectNav"></span>
                 </motion.li>
                 <motion.li
                   variants={childrenNav}
                   className="transition ease-in-out delay-150 hover:scale-125 duration-200 relative group"
                 >
-                  Tutorial
+                  <Link to="/tutorial"> Tutorial</Link>
                   <span className="effectNav"></span>
                 </motion.li>
                 <motion.li
