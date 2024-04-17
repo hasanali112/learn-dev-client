@@ -47,7 +47,7 @@ const Carousel = () => {
         style={{
           backgroundImage: `url(${imageSlide[slideIndex].url})`,
         }}
-        className=" h-[200px]   lg:h-[450px]  bg-center bg-cover duration-700"
+        className=" h-[200px]   lg:h-[450px]  bg-center bg-cover duration-700 rounded-lg"
       ></div>
       <div className="">
         <div className="flex justify-between items-center mx-4 -translate-y-20 lg:-translate-y-48">

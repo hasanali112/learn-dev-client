@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import { Link } from "react-router-dom";
 
 type TProps = {
@@ -18,7 +19,7 @@ const FrontEndCard = ({
   return (
     <div>
       <div
-        className={`${className} lg:w-[300px] lg:h-[150px] rounded-2xl p-4 text-white hover:-translate-y-3 duration-500`}
+        className={`${className} lg:w-[290px] lg:h-[150px] rounded-2xl p-4 text-white hover:-translate-y-3 duration-500`}
       >
         <h1 className="text-center lg:text-2xl text-xl font-bold w-full  mt-2">
           {title}
@@ -29,7 +30,10 @@ const FrontEndCard = ({
         <div className=" flex gap-3 justify-center items-center lg:mt-6 mt-3 mb-4 lg:mb-0">
           <Link to={`${linkProp}`}>
             <button
-              className={`p-2 w-24 text-white  bg-pink-600  rounded-xl ${buttonColor}`}
+              className={cn(
+                "p-2 w-24 text-white  bg-pink-600  rounded-xl",
+                buttonColor
+              )}
             >
               Detail
             </button>
