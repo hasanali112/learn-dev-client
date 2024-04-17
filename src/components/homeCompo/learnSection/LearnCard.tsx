@@ -7,11 +7,11 @@ const LearnCard = () => {
         background: `url(${bannerImage})`,
         backgroundColor: "#18152f",
       }}
-      className=" h-[400px] lg:w-[1280px] pt-20  lg:pt-32 text-white"
+      className=" h-[400px] lg:w-[1200px] pt-20  lg:pt-32 text-white"
     >
       <div className="flex flex-col lg:flex-row gap-6 p-2">
         <div className="bg-gradient-to-r from-[#242147] via-[#242147] to-[#6F1D57] lg:w-[800px] lg:h-[300px] rounded-2xl p-4">
-          <h1 className="text-center lg:text-2xl text-xl font-bold w-full lg:w-1/2 mx-auto lg:mt-20  lg:p-0">
+          <h1 className="text-center lg:text-2xl text-xl font-bold w-full lg:w-3/4 mx-auto xl:mt-14  lg:p-0">
             Ready to get started with Pluralsight Skills?
           </h1>
           <p className="text-center text-xl font-smibold  lg:mt-3 mt-2">
@@ -27,7 +27,7 @@ const LearnCard = () => {
           </div>
         </div>
         <div className="bg-gradient-to-r from-[#1A4377] via-[#242147] to-[#242147] lg:w-[800px] lg:h-[300px] rounded-2xl p-4">
-          <h1 className="text-center lg:text-2xl text-xl font-bold w-full lg:w-1/2 mx-auto lg:mt-20  lg:p-0">
+          <h1 className="text-center lg:text-2xl text-xl font-bold w-full lg:w-1/2 mx-auto xl:mt-14  lg:p-0">
             Ready to get started with Pluralsight Flow?
           </h1>
           <p className="text-center text-xl font-smibold  lg:mt-3 mt-2">

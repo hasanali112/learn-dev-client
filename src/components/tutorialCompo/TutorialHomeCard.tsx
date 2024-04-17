@@ -11,7 +11,7 @@ const TutorialHomeCard = ({ className, title, subtitle, linkProp }: TProps) => {
   return (
     <div>
       <div
-        className={`${className} lg:w-[650px] lg:h-[300px] rounded-2xl p-4 text-white`}
+        className={`${className} lg:w-[580px] lg:h-[300px] rounded-2xl p-4 text-white`}
       >
         <h1 className="text-center lg:text-2xl text-xl font-bold w-full lg:w-1/2 mx-auto lg:mt-10  lg:p-0">
           {title}
